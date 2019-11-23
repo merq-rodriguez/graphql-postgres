@@ -1,16 +1,12 @@
 import { GraphQLServer } from 'graphql-yoga'
-
-const typeDefs = `
-  type Query {
-    hello(name: String): String!
-  }
-`
-
-const resolvers = {
-  Query: {
-    hello: (_, { name }) => `Hello ${name || 'World'}`,
-  },
-}
+import { createConnection } from 'typeorm';
+import { typeDefs } from './modules/users/user.shema'
+import { resolvers } from './modules/users/user.resolver'
 
 const server = new GraphQLServer({ typeDefs, resolvers })
-server.start(() => console.log('Server is running on localhost:4000'))
+createConnection()
+  .then(() => {
+    server.start(() => console.log("Server is running on localhost:4000"));
+  }).catch(() => {
+  console.log("Couldn't connect to the database.")
+});
