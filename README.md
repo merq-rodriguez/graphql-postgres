@@ -20,13 +20,13 @@ $ npm  start
 >Create User
 
 <p align="center">
-  <atarget="blank"><img src="https://i.postimg.cc/63f1qD1C/cap1.png"/></a>
+  <img src="https://i.postimg.cc/63f1qD1C/cap1.png"/>
 </p>
 
 >Find User
 
 <p align="center">
-  <atarget="blank"><img src="https://i.postimg.cc/fLLqRBxJ/cap2.png"/></a>
+  <img src="https://i.postimg.cc/fLLqRBxJ/cap2.png"/>
 </p>
 
 
