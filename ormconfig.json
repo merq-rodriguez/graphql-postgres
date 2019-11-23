@@ -1,7 +1,9 @@
 {
   "type": "postgres",
   "host": "localhost",
-  "port": 5432,
+  "port": 54320,
+  "username": "invited",
+  "password": "1234",
   "database": "graphqldb",
   "synchronize": true,
   "logging": true,
